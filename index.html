@@ -1,0 +1,53 @@
+<!-- Author:- Aryan Shandilya
+Date Created:- 16-4-24 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trex Fold</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Poppins:wght@100&family=Reenie+Beanie&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+</head>
+<body>
+    <!-- Require the peer dependencies of handpose. -->
+<script src="https://unpkg.com/@tensorflow/tfjs-core@2.1.0/dist/tf-core.js"></script>
+<script src="https://unpkg.com/@tensorflow/tfjs-converter@2.1.0/dist/tf-converter.js"></script>
+
+<!-- You must explicitly require a TF.js backend if you're not using the tfs union bundle. -->
+<script src="https://unpkg.com/@tensorflow/tfjs-backend-webgl@2.1.0/dist/tf-backend-webgl.js"></script>
+<!-- Alternatively you can use the WASM backend: <script src="https://unpkg.com/@tensorflow/tfjs-backend-wasm@2.1.0/dist/tf-backend-wasm.js"></script> -->
+
+<script src="https://unpkg.com/@tensorflow-models/handpose@0.0.6/dist/handpose.js"></script>
+    <header>
+        <h1>Trex-Fold</h1>
+    </header>
+    <main>
+        <div id="game-container">
+            <iframe id='game-iframe' src="dino.html" width="600" height="400" frameborder="0"></iframe>
+        </div>
+        <div id="instructions">
+            <p>
+                Fold your palms to start playing!
+            </p>
+        </div>
+        <a href="https://github.com/Aryan-Shan/Trex-Fold" target="_blank">
+            <button id="Repo-btn">GitHub</button>
+        </a>
+        <div id="webcam-container">
+            <video id="webcam-feed" width="400" height="300" autoplay></video>
+            
+            
+        </div>
+        <canvas width="400" height="300" id="canvas"></canvas>
+    </main>
+    <footer>
+        <p>Made With ❤️ By Aryan Shandilya</p>
+    </footer>
+    <script src="./script2.js"></script>
+</body>
+</html>
