@@ -1,0 +1,330 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0);
+    
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+nav {
+    margin-top: 0;
+    background-color: transparent;
+    overflow: hidden;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50%3B' xml:space='preserve'%3E%3Cstyle type='text/css'%3E.st1%7Bopacity:0.3%3Bfill:%23FFFFFF%3B%7D.st3%7Bopacity:0.1%3Bfill:%23FFFFFF%3B%7D%3C/style%3E%3Ccircle class='st1' cx='5' cy='8' r='1'/%3E%3Ccircle class='st1' cx='38' cy='3' r='1'/%3E%3Ccircle class='st1' cx='12' cy='4' r='1'/%3E%3Ccircle class='st1' cx='16' cy='16' r='1'/%3E%3Ccircle class='st1' cx='47' cy='46' r='1'/%3E%3Ccircle class='st1' cx='32' cy='10' r='1'/%3E%3Ccircle class='st1' cx='3' cy='46' r='1'/%3E%3Ccircle class='st1' cx='45' cy='13' r='1'/%3E%3Ccircle class='st1' cx='10' cy='28' r='1'/%3E%3Ccircle class='st1' cx='22' cy='35' r='1'/%3E%3Ccircle class='st1' cx='3' cy='21' r='1'/%3E%3Ccircle class='st1' cx='26' cy='20' r='1'/%3E%3Ccircle class='st1' cx='30' cy='45' r='1'/%3E%3Ccircle class='st1' cx='15' cy='45' r='1'/%3E%3Ccircle class='st1' cx='34' cy='36' r='1'/%3E%3Ccircle class='st1' cx='41' cy='32' r='1'/%3E%3C/svg%3E");
+    background-position: 0px 0px;
+    animation: animatedBackground 10s linear infinite;
+}
+/* snow effects */
+.snow {
+    width: auto;
+    height: 100%;
+    border: 2px dotted white;
+    border-radius: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50%3B' xml:space='preserve'%3E%3Cstyle type='text/css'%3E.st1%7Bopacity:0.3%3Bfill:%23FFFFFF%3B%7D.st3%7Bopacity:0.1%3Bfill:%23FFFFFF%3B%7D%3C/style%3E%3Ccircle class='st1' cx='5' cy='8' r='1'/%3E%3Ccircle class='st1' cx='38' cy='3' r='1'/%3E%3Ccircle class='st1' cx='12' cy='4' r='1'/%3E%3Ccircle class='st1' cx='16' cy='16' r='1'/%3E%3Ccircle class='st1' cx='47' cy='46' r='1'/%3E%3Ccircle class='st1' cx='32' cy='10' r='1'/%3E%3Ccircle class='st1' cx='3' cy='46' r='1'/%3E%3Ccircle class='st1' cx='45' cy='13' r='1'/%3E%3Ccircle class='st1' cx='10' cy='28' r='1'/%3E%3Ccircle class='st1' cx='22' cy='35' r='1'/%3E%3Ccircle class='st1' cx='3' cy='21' r='1'/%3E%3Ccircle class='st1' cx='26' cy='20' r='1'/%3E%3Ccircle class='st1' cx='30' cy='45' r='1'/%3E%3Ccircle class='st1' cx='15' cy='45' r='1'/%3E%3Ccircle class='st1' cx='34' cy='36' r='1'/%3E%3Ccircle class='st1' cx='41' cy='32' r='1'/%3E%3C/svg%3E");
+    background-position: 0px 0px;
+    animation: animatedBackground 10s linear infinite;
+  }
+  
+  .snow div {
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 50 50' style='enable-background:new 0 0 50 50%3B' xml:space='preserve'%3E%3Cstyle type='text/css'%3E.st1%7Bopacity:0.7%3Bfill:%23FFFFFF%3B%7D.st3%7Bopacity:0.1%3Bfill:%23FFFFFF%3B%7D%3C/style%3E%3Ccircle class='st3' cx='4' cy='14' r='1'/%3E%3Ccircle class='st3' cx='43' cy='3' r='1'/%3E%3Ccircle class='st3' cx='31' cy='30' r='2'/%3E%3Ccircle class='st3' cx='19' cy='23' r='1'/%3E%3Ccircle class='st3' cx='37' cy='22' r='1'/%3E%3Ccircle class='st3' cx='43' cy='16' r='1'/%3E%3Ccircle class='st3' cx='8' cy='45' r='1'/%3E%3Ccircle class='st3' cx='29' cy='39' r='1'/%3E%3Ccircle class='st3' cx='13' cy='37' r='1'/%3E%3Ccircle class='st3' cx='47' cy='32' r='1'/%3E%3Ccircle class='st3' cx='15' cy='4' r='2'/%3E%3Ccircle class='st3' cx='9' cy='27' r='1'/%3E%3Ccircle class='st3' cx='30' cy='9' r='1'/%3E%3Ccircle class='st3' cx='25' cy='15' r='1'/%3E%3Ccircle class='st3' cx='21' cy='45' r='2'/%3E%3Ccircle class='st3' cx='42' cy='45' r='1'/%3E%3C/svg%3E");
+    background-position: 0px 0px;
+    animation: animatedBackground 15s linear infinite;
+  }
+  
+  @keyframes animatedBackground {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0px 300px;
+    }
+  }
+  
+  
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: right;
+}
+
+nav ul li a {
+    font-family:monospace;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover {
+    transition: 200ms ease-in-out;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+header {
+    background-color:transparent;
+    color: #c7d500;
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Bungee Shade", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-container {
+    margin-bottom: 20px;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 2px;
+}
+
+#instructions {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #e05858;
+    font-family: "Reenie Beanie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+}
+
+footer {
+    background-color:transparent;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-family: "Reenie Beanie", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size:larger;
+}
+
+/* CSS styles for the webcam container */
+#webcam-container {
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    width: 200px;
+    height: 150px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#webcam-feed {
+    width: 100%;
+    height: 100%;
+}
+
+#canvas{
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    width: 200px;
+    height: 150px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#Repo-btn{
+    background-color: transparent; /* Green */
+    font-family: "Reenie Beanie", cursive;
+    border: 1.5px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#Repo-btn:hover{
+    background-color: white; 
+    border: 1.5px solid rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 1163px) and (max-height: 1024px) {
+   
+    #game-container {
+        width: 80%;
+        max-width: 900px; 
+        height: 300px; 
+    }
+    #game-iframe{
+        width: 80%; 
+        max-width: 900px; 
+        height: 300px;
+    }
+
+    #webcam-container {
+        position: fixed;
+        top: 75%;
+        right:5%;
+        width: 20%;
+        height: 15%;
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        overflow: hidden;
+        z-index: -1;
+    }
+    
+    #webcam-feed {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #canvas{
+        position: fixed;
+        top: 75%;
+        right:5%;
+        width: 20%;
+        height: 15%;
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+}
+
+#LogoMain{
+    text-decoration: none;
+    color: yellow;
+}
+
+
+/* css for Instructions Page */
+.instruction {
+    color: wheat;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    padding: 20px;
+    font-family: Poppins;
+    overflow-y: scroll;
+}
+#infoHeader{
+    color: #c7d500;
+}
+#infSub{
+    color: #e05858;
+}
+#ol1{
+    color: rgb(255, 255, 255);
+}
+#ol2{
+    color: #ffffff;
+}
+::-webkit-scrollbar{
+	width: 10px;
+    
+}
+
+::-webkit-scrollbar-track-piece{
+	background-color: #FFF;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #300202;
+	outline: 2px solid #FFF;
+	outline-offset: -2px;
+	border: .1px solid #B7B7B7;
+   
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background-color: #909090;
+}
+
+
+
+/* about section styling */
+
+.about-section {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+#nameHeader{
+    font-family: Poppins;
+    color: #c7d500;
+}
+#aboutMe{
+    font-family: monospace;
+    font-size:x-large;
+}
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.text-container {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
